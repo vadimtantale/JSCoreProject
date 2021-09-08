@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Core. API GitHub</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="form">
+		<form class="search">
+			<div class="search__header"></div>
+			<input class='search__request' type="text" name='search' placeholder="Repository info" autofocus>
+			<ul class="search__items search__items--visible">
+				<li class="search__item"><button class="search__result">Redax</button></li>
+				<li class="search__item"><button class="search__result"></button></li>
+				<li class="search__item"><button class="search__result"></button></li>
+				<li class="search__item"><button class="search__result"></button></li>
+				<li class="search__item"><button class="search__result"></button></li>
+			</ul>
+		</form>
+		<div class="result">
+			<ul class="result__items">
+				<li class="result__item">
+					<ul class="result__descr">
+						<li class="result__data result__name">Name: react</li>
+						<li class="result__data result__owner">Owner: facebook</li>
+						<li class="result__data result__stars">Stars: 145231</li>
+					</ul>
+					<button class="button"></button>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<template id="result">
+		<li class="result__item">
+			<ul class="result__descr">
+				<li class="result__data result__name"></li>
+				<li class="result__data result__owner"></li>
+				<li class="result__data result__stars"></li>
+			</ul>
+			<button class="button"></button>
+		</li>
+	</template>
+</body>
+</html>

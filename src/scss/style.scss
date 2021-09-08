@@ -1,0 +1,45 @@
+@import 'libs/normalize';
+@import 'libs/fonts';
+
+@import 'base/variables';
+
+body {	
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	color: $text-main;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	background: $back;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	padding: 0;
+	border: none;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+@import 'blocks/form';
+@import 'blocks/search';
+@import 'blocks/result';
+@import 'blocks/buttons';
+// @import 'blocks/';
+// @import 'blocks/';
+// @import 'blocks/';
+// @import 'blocks/';
+// @import 'blocks/';
+// @import 'blocks/';
+// @import 'blocks/';
+// @import 'blocks/';
+// @import 'blocks/';
+
