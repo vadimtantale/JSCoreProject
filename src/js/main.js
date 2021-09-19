@@ -6,9 +6,10 @@ const listRepositories = document.querySelector('.result__items');//блок с 
 
 const template = document.querySelector('#result')
 												 .content
-												 .firstElementChild;//блок-шаблон с информацией о репозитории
+												 .firstElementChild;//блок-шаблон для отображения информации о репозитории
 
 const debouncedFetch = debounce(fetchResponse, 500);
+
 //обработчики
 input.addEventListener('input', (e) => {
 	debouncedFetch();
@@ -20,16 +21,10 @@ document.addEventListener('click', (e) => {
 	if(target.classList.contains('search__result')) {
 		createElement(target);
 	}
-});
-
-document.addEventListener('click', (e) => {
-	e.preventDefault();
-	const target = e.target;
 	if(target.classList.contains('button')) {
 		target.closest('.result__item').remove();
 	}
 });
-
 
 //функции
 function debounce(callback, ms) {
