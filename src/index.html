@@ -12,8 +12,8 @@
 		<form class="search">
 			<div class="search__header"></div>
 			<input class='search__request' type="text" name='search' placeholder="Repository info" autofocus>
-			<ul class="search__items search__items--visible">
-				<li class="search__item"><button class="search__result">Redax</button></li>
+			<ul class="search__items">
+				<li class="search__item"><button class="search__result"></button></li>
 				<li class="search__item"><button class="search__result"></button></li>
 				<li class="search__item"><button class="search__result"></button></li>
 				<li class="search__item"><button class="search__result"></button></li>
@@ -22,23 +22,15 @@
 		</form>
 		<div class="result">
 			<ul class="result__items">
-				<li class="result__item">
-					<ul class="result__descr">
-						<li class="result__data result__name">Name: react</li>
-						<li class="result__data result__owner">Owner: facebook</li>
-						<li class="result__data result__stars">Stars: 145231</li>
-					</ul>
-					<button class="button"></button>
-				</li>
 			</ul>
 		</div>
 	</section>
 	<template id="result">
 		<li class="result__item">
 			<ul class="result__descr">
-				<li class="result__data result__name"></li>
-				<li class="result__data result__owner"></li>
-				<li class="result__data result__stars"></li>
+				<li class="result__data result__data--account"></li>
+				<li class="result__data result__data--owner"></li>
+				<li class="result__data result__data--stars"></li>
 			</ul>
 			<button class="button"></button>
 		</li>

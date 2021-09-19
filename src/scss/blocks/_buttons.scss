@@ -17,6 +17,10 @@
 	&::after {
 		transform: translate(-28px, -2px) rotate(-45deg);
 	}
+	&:hover, &:focus {
+		transform: rotate(90deg);
+    transition: all 0.5s ease-out;
+	}
 	&:active {
 		filter: drop-shadow(0 0 4px $button);
 	}
